@@ -1,3 +1,12 @@
+// Hero Slideshow
+const heroSlides = document.querySelectorAll('.hero-slide');
+let heroIndex = 0;
+setInterval(() => {
+  heroSlides[heroIndex].classList.remove('active');
+  heroIndex = (heroIndex + 1) % heroSlides.length;
+  heroSlides[heroIndex].classList.add('active');
+}, 4000);
+
 // Menu Responsivo
 const menuToggle = document.getElementById('menu-toggle');
 const navMenu = document.getElementById('nav-menu');
