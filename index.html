@@ -4,343 +4,418 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Flávio Fotografia — fotógrafo profissional em Minas Gerais. Casamentos, ensaios, eventos e fotografia comercial. Transformando momentos em memórias eternas.">
+  <meta property="og:title" content="Flávio Fotografia">
+  <meta property="og:description" content="Fotógrafo profissional em Minas Gerais. Casamentos, ensaios, eventos e muito mais.">
+  <meta property="og:image" content="public/carrousel_photos_opt/fot15.jpg">
+  <meta property="og:type" content="website">
   <title>Flávio Fotografia</title>
-  <!-- Fonte moderna -->
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <!-- Link para o CSS -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Flávio Fotografia",
+    "description": "Fotógrafo profissional em Minas Gerais. Especialista em casamentos, ensaios, eventos e fotografia comercial.",
+    "url": "https://www.flavio.fot.br",
+    "telephone": "+55-31-99804-8395",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Belo Horizonte",
+      "addressRegion": "MG",
+      "addressCountry": "BR"
+    },
+    "priceRange": "$$",
+    "serviceArea": {
+      "@type": "AdministrativeArea",
+      "name": "Minas Gerais"
+    },
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Serviços Fotográficos",
+      "itemListElement": [
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fotografia de Casamento"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Ensaios e Retratos"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fotografia de Eventos"}},
+        {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Fotografia Comercial"}}
+      ]
+    }
+  }
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Playfair+Display:ital,wght@0,700;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <!-- Cabeçalho com menu -->
+
+  <!-- Cabeçalho -->
   <header>
     <div class="container">
-      <!-- Substituindo o texto pela logo -->
       <h1>
         <img src="public/profile_photos/logo.png" alt="Flávio Fotografia" class="logo">
       </h1>
-      <div class="menu-toggle" id="menu-toggle">☰</div>
+      <div class="menu-toggle" id="menu-toggle" aria-label="Abrir menu">☰</div>
       <nav>
         <ul id="nav-menu">
           <li><a href="#home">Home</a></li>
+          <li><a href="#servicos">Serviços</a></li>
           <li><a href="#portfolio">Portfólio</a></li>
           <li><a href="#about">Sobre</a></li>
           <li><a href="#gallery">Galeria</a></li>
+          <li><a href="#contato">Contato</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-
-  <!-- Teste -->
+  <!-- Hero -->
   <section class="hero" id="home">
-    <h2>Capturando Momentos Únicos</h2>
+    <div class="hero-content">
+      <h2>Capturando Momentos Únicos</h2>
+      <p>Fotografia profissional que transforma instantes em memórias eternas</p>
+      <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais!" class="btn-hero" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Fale comigo no WhatsApp
+      </a>
+    </div>
   </section>
 
+  <!-- Serviços -->
+  <section id="servicos" class="services">
+    <div class="container">
+      <h2 class="section-title">Serviços</h2>
+      <div class="services-grid">
 
-  <!-- Carrossel de Imagens (Portfólio) -->
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/></svg>
+          </div>
+          <h3>Casamentos</h3>
+          <p>Cobertura completa do seu dia mais especial, do making of à festa. Cada detalhe e emoção eternizado.</p>
+          <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20fotografia%20de%20casamento!" class="btn-service" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/></svg>
+          </div>
+          <h3>Ensaios & Retratos</h3>
+          <p>Ensaios individuais, familiares, gestantes e newborn. Momentos únicos capturados com sensibilidade.</p>
+          <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20ensaios%20fotogrficos!" class="btn-service" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+          </div>
+          <h3>Eventos</h3>
+          <p>Formaturas, aniversários, confraternizações e eventos corporativos. Cobertura completa do início ao fim.</p>
+          <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20fotografia%20de%20eventos!" class="btn-service" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+
+        <div class="service-card">
+          <div class="service-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 15.2c-1.768 0-3.2-1.432-3.2-3.2S10.232 8.8 12 8.8s3.2 1.432 3.2 3.2-1.432 3.2-3.2 3.2zM18.4 4.8H18l-1.2-1.6H7.2L6 4.8H4.8C3.52 4.8 2.4 5.92 2.4 7.2v10.4c0 1.28 1.12 2.4 2.4 2.4h14.4c1.28 0 2.4-1.12 2.4-2.4V7.2c0-1.28-1.12-2.4-2.4-2.4z"/></svg>
+          </div>
+          <h3>Comercial & Produto</h3>
+          <p>Fotografia para empresas, e-commerce, catálogos e redes sociais. Imagens que vendem.</p>
+          <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais%20sobre%20fotografia%20comercial!" class="btn-service" target="_blank" rel="noopener">Solicitar orçamento</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Como Funciona -->
+  <section class="how-it-works">
+    <div class="container">
+      <h2 class="section-title">Como funciona</h2>
+      <div class="steps">
+
+        <div class="step">
+          <div class="step-number">01</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"/></svg>
+          </div>
+          <h3>Contato</h3>
+          <p>Mande uma mensagem no WhatsApp e conte o que está planejando. Respondo em até 24h.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">02</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"/></svg>
+          </div>
+          <h3>Briefing</h3>
+          <p>Alinhamos data, local, estilo e todos os detalhes para que tudo saia perfeito.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">03</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 15.2c-1.768 0-3.2-1.432-3.2-3.2S10.232 8.8 12 8.8s3.2 1.432 3.2 3.2-1.432 3.2-3.2 3.2zM18.4 4.8H18l-1.2-1.6H7.2L6 4.8H4.8C3.52 4.8 2.4 5.92 2.4 7.2v10.4c0 1.28 1.12 2.4 2.4 2.4h14.4c1.28 0 2.4-1.12 2.4-2.4V7.2c0-1.28-1.12-2.4-2.4-2.4z"/></svg>
+          </div>
+          <h3>Sessão</h3>
+          <p>O grande dia chega! Trabalho com leveza e atenção para que tudo flua naturalmente.</p>
+        </div>
+
+        <div class="step">
+          <div class="step-number">04</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M19 9h-4V3H9v6H5l7 7 7-7zm-8 2V5h2v6h1.17L12 13.17 9.83 11H11zm-6 7h14v2H5z"/></svg>
+          </div>
+          <h3>Entrega</h3>
+          <p>Fotos editadas com cuidado e entregues em alta resolução. Memórias para guardar para sempre.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfólio / Carrossel -->
   <section id="portfolio">
-    <h2 style="text-align:center; color:#FFD700; margin-bottom:20px;">Portfólio</h2>
+    <h2 class="section-title">Portfólio</h2>
     <div class="carousel-container">
-      <!-- Grupo de carrossel: cada grupo contém 3 fotos -->
       <div class="carousel-groups">
         <div class="carousel-group">
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot11.jpg" alt="Foto 1">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot11.jpg" alt="Trabalho fotográfico 1" loading="eager">
           </div>
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot12.jpg" alt="Foto 2">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot12.jpg" alt="Trabalho fotográfico 2" loading="eager">
           </div>
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot13.JPG" alt="Foto 3">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot13.jpg" alt="Trabalho fotográfico 3" loading="eager">
           </div>
         </div>
         <div class="carousel-group">
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot14.JPG" alt="Foto 4">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot14.jpg" alt="Trabalho fotográfico 4" loading="lazy">
           </div>
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot15.jpg" alt="Foto 5">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot15.jpg" alt="Trabalho fotográfico 5" loading="lazy">
           </div>
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot16.JPG" alt="Foto 6">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot16.jpg" alt="Trabalho fotográfico 6" loading="lazy">
           </div>
         </div>
         <div class="carousel-group">
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot17.jpg" alt="Foto 7">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot17.jpg" alt="Trabalho fotográfico 7" loading="lazy">
           </div>
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot18.JPG" alt="Foto 8">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot18.jpg" alt="Trabalho fotográfico 8" loading="lazy">
           </div>
           <div class="carousel-slide">
-            <img src="public/carrousel_photos/fot19.jpg" alt="Foto 9">
-            <div class="carousel-caption"></div>
+            <img src="public/carrousel_photos_opt/fot19.jpg" alt="Trabalho fotográfico 9" loading="lazy">
           </div>
         </div>
       </div>
       <div class="carousel-nav">
-        <button id="prev">&#10094;</button>
-        <button id="next">&#10095;</button>
+        <button id="prev" aria-label="Anterior">&#10094;</button>
+        <button id="next" aria-label="Próximo">&#10095;</button>
       </div>
     </div>
   </section>
 
-  <!-- Seção Sobre -->
+  <!-- Sobre -->
   <section id="about" class="about">
-    <h2 style="color:#FFD700;">Sobre Mim</h2>
-    <p style="max-width:800px; margin:auto;">
-      Sou fotógrafo profissional apaixonado por contar histórias através das lentes. Cada foto é um retrato de
-      momentos e emoções, cuidadosamente capturados para transformar o ordinário em extraordinário.
-    </p>
-    <div class="about-photo">
-      <img src="public/profile_photos/perfil.jpg" alt="Foto do Fotógrafo">
+    <div class="about-grid">
+      <div class="about-image">
+        <img src="public/profile_photos/perfil.jpg" alt="Flávio, fotógrafo profissional">
+      </div>
+      <div class="about-text">
+        <span class="about-label">Sobre mim</span>
+        <h2>Contando histórias através das lentes</h2>
+        <p>
+          Sou fotógrafo profissional apaixonado por eternizar momentos que importam. Cada trabalho é único —
+          da emoção do primeiro olhar no altar até o sorriso espontâneo num ensaio em família.
+          Com atenção aos detalhes e um olhar artístico apurado, transformo o ordinário em extraordinário.
+        </p>
+        <div class="about-stats">
+          <div class="stat">
+            <span class="stat-number">6+</span>
+            <span class="stat-label">Anos de experiência</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">350+</span>
+            <span class="stat-label">Eventos realizados</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">80+</span>
+            <span class="stat-label">Casamentos</span>
+          </div>
+          <div class="stat">
+            <span class="stat-number">500+</span>
+            <span class="stat-label">Clientes satisfeitos</span>
+          </div>
+        </div>
+      </div>
     </div>
   </section>
 
-  <!-- Seção Galeria Interativa Dinâmica -->
+  <!-- Galeria -->
   <section id="gallery" class="gallery">
-    <h2 class="gallery-title">Galeria</h2>
+    <h2 class="section-title">Galeria</h2>
+    <div class="gallery-filters">
+      <button class="filter-btn active" data-filter="all">Todos</button>
+      <button class="filter-btn" data-filter="casamento">Casamentos</button>
+      <button class="filter-btn" data-filter="ensaio">Ensaios</button>
+      <button class="filter-btn" data-filter="evento">Eventos</button>
+      <button class="filter-btn" data-filter="comercial">Comercial</button>
+    </div>
     <div class="gallery-grid">
 
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot2.jpg" alt="Foto 2" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot4.jpg" alt="Foto 4" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot5.jpg" alt="Foto 5" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot6.jpg" alt="Foto 6" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot7.jpg" alt="Foto 7" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot8.jpg" alt="Foto 8" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot9.jpg" alt="Foto 9" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot10.png" alt="Foto 10" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot11.JPG" alt="Foto 11" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot12.JPG" alt="Foto 12" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot3.jpg" alt="Foto 3" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot13.JPG" alt="Foto 13" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot14.JPG" alt="Foto 14" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot15.jpg" alt="Foto 15" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot16.jpg" alt="Foto 16" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot17.jpg" alt="Foto 17" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot1.jpg" alt="Foto 1" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot18.jpg" alt="Foto 18" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot19.jpg" alt="Foto 19" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot20.jpg" alt="Foto 20" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot21.jpg" alt="Foto 21" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot22.jpg" alt="Foto 22" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot23.JPG" alt="Foto 23" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot24.jpg" alt="Foto 24" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot25.jpg" alt="Foto 25" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot26.jpg" alt="Foto 26" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot27.jpg" alt="Foto 27" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot28.jpg" alt="Foto 28" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot29.jpg" alt="Foto 29" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot30.jpg" alt="Foto 30" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot31.jpg" alt="Foto 31" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot32.jpg" alt="Foto 32" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot33.jpg" alt="Foto 33" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot34.jpg" alt="Foto 34" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot35.jpg" alt="Foto 35" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot36.jpg" alt="Foto 36" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot37.jpg" alt="Foto 37" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot38.jpg" alt="Foto 38" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot39.jpg" alt="Foto 39" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot40.jpg" alt="Foto 40" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot41.jpg" alt="Foto 41" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot43.jpg" alt="Foto 42" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot44.jpg" alt="Foto 43" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot45.jpg" alt="Foto 44" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot46.jpg" alt="Foto 45" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot47.jpg" alt="Foto 46" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot48.jpg" alt="Foto 47" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot49.jpg" alt="Foto 48" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot50.jpg" alt="Foto 49" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot51.jpg" alt="Foto 50" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot52.jpg" alt="Foto 51" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot53.jpg" alt="Foto 52" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot55.jpg" alt="Foto 53" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot56.jpg" alt="Foto 54" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot57.jpg" alt="Foto 55" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot58.jpg" alt="Foto 56" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot59.jpg" alt="Foto 57" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot60.jpg" alt="Foto 58" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot61.jpg" alt="Foto 59" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot62.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot63.jpg" alt="Foto 63" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot64.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot65.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot66.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot67.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot68.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot69.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot70.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot72.jpg" alt="Foto 60" loading="lazy">
-      </div>
-      <div class="gallery-item">
-        <img src="public/galery_photos/fot71.jpg" alt="Foto 60" loading="lazy">
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot2.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot4.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot5.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot6.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot7.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot8.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot9.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot10.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot11.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot12.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot3.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot13.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot14.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot15.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot16.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot17.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot1.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot18.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot19.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot20.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot21.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot22.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot23.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot24.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot25.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot26.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot27.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot28.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot29.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot30.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot31.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot32.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot33.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot34.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot35.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot36.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot37.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot38.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot39.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot40.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot41.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot43.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot44.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot45.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot46.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot47.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot48.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot49.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="casamento"><img src="public/galery_photos_opt/fot50.jpg" alt="Fotografia de casamento" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot51.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot52.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot53.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot55.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="ensaio"><img src="public/galery_photos_opt/fot56.jpg" alt="Ensaio fotográfico" loading="lazy"></div>
+      <div class="gallery-item" data-category="evento"><img src="public/galery_photos_opt/fot57.jpg" alt="Fotografia de evento" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot58.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot59.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot60.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot61.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot62.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot63.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot64.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot65.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot66.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot67.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot68.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot69.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot70.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot72.jpg" alt="Fotografia comercial" loading="lazy"></div>
+      <div class="gallery-item" data-category="comercial"><img src="public/galery_photos_opt/fot71.jpg" alt="Fotografia comercial" loading="lazy"></div>
+
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div id="lightbox-modal" class="lightbox-modal" role="dialog" aria-label="Visualizar foto">
+    <span class="lightbox-close" aria-label="Fechar">&times;</span>
+    <button class="lightbox-prev" aria-label="Foto anterior">&#10094;</button>
+    <img class="lightbox-content" id="lightbox-image" alt="Foto ampliada">
+    <button class="lightbox-next" aria-label="Próxima foto">&#10095;</button>
+  </div>
+
+  <!-- Depoimentos -->
+  <section class="testimonials">
+    <div class="container">
+      <h2 class="section-title">O que nossos clientes dizem</h2>
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            O Flávio capturou cada momento do nosso casamento com uma sensibilidade incrível. As fotos superaram
+            todas as expectativas — cada detalhe, cada emoção eternizado de forma única. Não poderíamos ter feito
+            escolha melhor!
+          </p>
+          <div class="testimonial-author">
+            <strong>Ana Clara &amp; Rodrigo Mendes</strong>
+            <span>Casamento em Belo Horizonte</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Contratei o Flávio para o aniversário de 15 anos da minha filha e fiquei impressionada com a qualidade
+            do trabalho. Ele tem um jeito especial de capturar as emoções do momento. As fotos ficaram lindíssimas!
+          </p>
+          <div class="testimonial-author">
+            <strong>Fernanda Souza</strong>
+            <span>Debutante em Contagem</span>
+          </div>
+        </div>
+
+        <div class="testimonial-card">
+          <p class="testimonial-text">
+            Fizemos o ensaio de gestante com o Flávio e as fotos ficaram ainda mais bonitas do que imaginávamos.
+            Profissional, pontual, atencioso e com um olhar artístico incrível. Super recomendo!
+          </p>
+          <div class="testimonial-author">
+            <strong>Juliana &amp; Bruno Oliveira</strong>
+            <span>Ensaio Gestante em BH</span>
+          </div>
+        </div>
+
       </div>
     </div>
   </section>
 
-  <div id="lightbox-modal" class="lightbox-modal">
-    <span class="lightbox-close">&times;</span>
-    <img class="lightbox-content" id="lightbox-image">
-  </div>
+  <!-- Contato -->
+  <section id="contato" class="contact">
+    <div class="container">
+      <h2 class="section-title">Vamos Conversar?</h2>
+      <p>Pronto para transformar seus momentos em memórias eternas? Entre em contato e faça seu orçamento sem compromisso.</p>
+      <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20fazer%20um%20or%C3%A7amento!" class="btn-whatsapp-contact" target="_blank" rel="noopener">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+        Chamar no WhatsApp
+      </a>
+      <p class="contact-number">+55 (31) 99804-8395</p>
+    </div>
+  </section>
 
-  <!-- Botão Flutuante do WhatsApp -->
-  <a href="https://wa.me/5531998048395?text=Gostaria%20de%20saber%20mais!" class="whatsapp-button" target="_blank">
-    <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
-      <!-- Exemplo de path oficial e sintaticamente correto -->
-      <path
-        d="M16 3C9.373 3 4 8.373 4 15c0 2.667.8 5.133 2.2 7.2L4 29l7.2-2.2C13.867 27.2 15.333 27.6 16 27.6c6.627 0 12-5.373 12-12S22.627 3 16 3z" />
-      <path d="M22.8 19.933c-.4-.2-2.333-1.133-2.7-1.2- … restante do path corrigido …" />
-    </svg>
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Flávio Fotografia — Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <!-- Botão Flutuante WhatsApp -->
+  <a href="https://wa.me/5531998048395?text=Ol%C3%A1%2C%20gostaria%20de%20saber%20mais!" class="whatsapp-button" target="_blank" rel="noopener" aria-label="Contato via WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
   </a>
 
-
-  <!-- Script JavaScript -->
   <script src="script.js"></script>
 </body>
 
